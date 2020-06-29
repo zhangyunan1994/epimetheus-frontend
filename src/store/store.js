@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import cookie from '../assets/util/cookie'
+import cookie from '@/assets/utils/cookie'
 
 Vue.use(Vuex)
 

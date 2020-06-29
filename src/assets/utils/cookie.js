@@ -2,7 +2,7 @@ let cookie = {
   setCookie (cname, value, expiredays) {
     let exdate = new Date()
     exdate.setTime(exdate.getTime() + expiredays)
-    exdate.setDate(exdate.getDate() + expiredays)　
+    exdate.setDate(exdate.getDate() + expiredays)
     document.cookie = cname + '=' + escape(value) + ((expiredays == null) ? '' : ';expires=' + exdate.toGMTString())
   },
   getCookie (name) {
@@ -25,4 +25,3 @@ let cookie = {
 }
 
 export default cookie
-  
